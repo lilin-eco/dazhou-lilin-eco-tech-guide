@@ -1,0 +1,28 @@
+{
+  "name": "dazhou-lilin-eco-tech-guide",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "postbuild": "pagefind --site out --output-path out/_pagefind",
+    "preview": "serve out -l 3100",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "nextra": "4.6.1",
+    "nextra-theme-docs": "4.6.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "pagefind": "1.6.0",
+    "patch-package": "8.0.1",
+    "serve": "14.2.8"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

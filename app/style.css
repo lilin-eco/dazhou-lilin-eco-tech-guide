@@ -1,0 +1,19 @@
+:root { --nextra-content-width: 88rem; }
+body { font-family: ui-sans-serif, system-ui, 'Microsoft YaHei', sans-serif; }
+.brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: -.02em; }
+.brand small { margin-left: 12px; font-size: 12px; font-weight: 400; color: #6b7280; }
+.brand-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; background: #106e58; color: white; font-size: 17px; }
+.guide-hero { padding: 38px 0 24px; }
+.guide-eyebrow { color: #10745d; font-size: 12px; font-weight: 700; letter-spacing: .15em; }
+.guide-hero h1 { font-size: clamp(2.1rem, 4vw, 3.2rem); font-weight: 750; line-height: 1.2; letter-spacing: -.05em; margin: 15px 0; }
+.guide-hero p { max-width: 36rem; font-size: 17px; line-height: 1.9; color: #6b7280; }
+.guide-status { display: inline-flex; margin-top: 20px; padding: 7px 12px; border-radius: 99px; border: 1px solid #d3e5dd; font-size: 12px; color: #106e58; background: #f1faf5; }
+.guide-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0 30px; }
+.guide-card { display: block; border: 1px solid #dce4e0; border-radius: 14px; padding: 22px; text-decoration: none; transition: border-color .15s, background .15s; }
+.guide-card:hover { border-color: #198066; background: #f5faf7; }
+.guide-card strong { display: block; font-size: 17px; margin-bottom: 9px; }
+.guide-card span { color: #6b7280; font-size: 14px; line-height: 1.8; }
+.dark .guide-card { border-color: #31443d; }
+.dark .guide-card:hover { background: #13281f; }
+.dark .guide-status { background: #142e24; color: #84d6b4; border-color: #2d5341; }
+@media (max-width: 600px) { .guide-cards { grid-template-columns: 1fr; } .brand small { display: none; } }
