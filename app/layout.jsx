@@ -5,7 +5,7 @@ import 'nextra-theme-docs/style.css'
 import './style.css'
 
 export const metadata = {
-  metadataBase: new URL('https://lilin-decoration-guide.hansiy-180.chatgpt.site'),
+  metadataBase: new URL('https://lilin-eco.github.io/dazhou-lilin-eco-tech-guide/'),
   title: { default: '使用指南 · 装饰工程项目管理系统', template: '%s · 装饰工程指南' },
   description: '按工程组织工作，沿业务记录核对进度、费用与交付。',
   robots: { index: false, follow: false }

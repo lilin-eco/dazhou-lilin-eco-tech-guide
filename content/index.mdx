@@ -2,6 +2,8 @@
 title: 使用指南
 ---
 
+import Link from 'next/link'
+
 <div className="guide-hero">
   <span className="guide-eyebrow">LILIN / DOCUMENTATION</span>
   <h1>从一个工程开始，<br />把每一步记录清楚。</h1>
@@ -10,10 +12,10 @@ title: 使用指南
 </div>
 
 <div className="guide-cards">
-  <a className="guide-card" href="/getting-started/"><strong>01　第一次使用 →</strong><span>准备账号、确认公司和角色，找到当前可办理的事项。</span></a>
-  <a className="guide-card" href="/projects/"><strong>02　办理项目立项 →</strong><span>从台账查询工程与研发项目，保存草稿、提交并查看审批记录。</span></a>
-  <a className="guide-card" href="/company-and-access/"><strong>03　确认访问范围 →</strong><span>理解租户、公司、项目成员和财务账套分别控制什么。</span></a>
-  <a className="guide-card" href="/prototype/"><strong>04　演练预算与财务 →</strong><span>用虚拟数据查看预算、发票和付款的原型操作。</span></a>
+  <Link className="guide-card" href="/getting-started/"><strong>01　第一次使用 →</strong><span>准备账号、确认公司和角色，找到当前可办理的事项。</span></Link>
+  <Link className="guide-card" href="/projects/"><strong>02　办理项目立项 →</strong><span>从台账查询工程与研发项目，保存草稿、提交并查看审批记录。</span></Link>
+  <Link className="guide-card" href="/company-and-access/"><strong>03　确认访问范围 →</strong><span>理解租户、公司、项目成员和财务账套分别控制什么。</span></Link>
+  <Link className="guide-card" href="/prototype/"><strong>04　演练预算与财务 →</strong><span>用虚拟数据查看预算和付款的原型操作。</span></Link>
 </div>
 
 ## 先看适用范围

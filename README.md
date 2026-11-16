@@ -30,9 +30,15 @@ npm run preview
 
 ## 部署
 
-本仓库保持私有。Sites 以 `.openai/hosting.json` 关联站点并托管静态构建，默认仅所有者可访问。GitHub 是组织源码仓库；Sites 发布使用其关联源码仓库的同一提交和对应构建包。修改源码后须重新构建和发布，仅推送 GitHub 不会自动更新站点。
+本指南仓库公开，业务主仓库保持私有。站点通过 GitHub Pages 公开访问：
 
-GitHub Actions 执行依赖安装、构建和产物归档，供后续持续发布使用。生产访问范围及共享另按项目安排设置。
+[装饰工程项目管理系统使用指南](https://lilin-eco.github.io/dazhou-lilin-eco-tech-guide/)
+
+推送 `main` 后，GitHub Actions 自动安装依赖、构建和发布。拉取请求仅构建。仓库 Settings → Pages 的发布源使用 GitHub Actions。
+
+Actions 设置 `NEXT_PUBLIC_BASE_PATH=/dazhou-lilin-eco-tech-guide`，确保页面、静态资源及中文搜索位于项目路径。默认本地构建不设此变量，`npm run preview` 可在根路径预览。
+
+正式正文：[使用指南（v0.1）](https://alidocs.dingtalk.com/i/nodes/ZQYprEoWoOd5LXY3FX6o9OqyW1waOeDk)。公开网站不包含钉钉访问凭据，内部资料仍受原权限控制。源码不再包含 Sites 部署配置，也不再向 Sites 同步或发布。
 
 ## 官方技术文档
 
